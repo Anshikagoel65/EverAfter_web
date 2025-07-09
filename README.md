@@ -17,8 +17,12 @@
 - install react-redux + @reduxjs/toolkit => configureStore => Provider => createSlice => add reducer to store.
 - add redux devtools in chrome.
 - login and see if your data is coming properly in the store.
-- navbar should update as soon as user logs in
-- refactor our code to add constants file + create a components folder
+- navbar should update as soon as user logs in.
+- refactor our code to add constants file + create a components folder.
+- you should not access other routes without login.
+- if token is not present, redirect user to login page.
+- logout.
+- profile.
 
 
 
