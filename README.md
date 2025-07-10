@@ -27,6 +27,10 @@
 - edit profile feature.
 - show toast message on save of profile.
 - see all my connections.
+- see all my connection request.
+- feature to accept/reject connection request.
+- send/ignore the user card from the feed.
+- sign up new user.
 
 
 

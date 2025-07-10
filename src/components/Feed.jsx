@@ -7,7 +7,6 @@ import UserCard from "./UserCard";
 
 const Feed = () => {
   const feed = useSelector((store) => store.feed);
-  console.log(feed);
   const dispatch = useDispatch();
 
   const getFeed = async () => {
@@ -26,8 +25,12 @@ const Feed = () => {
     getFeed();
   }, []);
 
+  if (!feed || !feed.data || feed.data.length === 0) {
+    return <h1 className="flex justify-center my-10">No new users found!</h1>;
+  }
+
   return (
-     feed && (
+    feed && (
       <div className="flex justify-center my-10">
         <UserCard user={feed.data[0]} />
       </div>
